@@ -1,0 +1,573 @@
+/* this is a default setting */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ########################## */
+/* this is body */
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* ################################# */
+/* this is nav bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  color: whitesmoke;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+
+  font-family: "Roboto", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+label {
+  margin: 50px;
+  font-size: larger;
+  font-weight: 10rem;
+}
+
+#navbar---items,
+li a {
+  color: whitesmoke;
+  text-decoration: none;
+  border-radius: 1rem;
+}
+#navbar---items,
+li a:hover {
+  background: lightskyblue;
+}
+
+#nav---items {
+  display: none;
+  gap: 50px;
+  margin-left: 5.5rem;
+  list-style: none;
+}
+
+@media only screen and (min-width: 600px) {
+  #nav---items {
+    display: flex;
+  }
+}
+#menu---icon {
+  float: right;
+  display: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  #menu---icon {
+    display: block;
+  }
+  #nav---items {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.6s;
+  }
+  .navbar---hover {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+}
+
+#check {
+  display: none;
+}
+/* ########################## */
+/* this image sectiom */
+img {
+  width: 100%;
+}
+/* ############## */
+/* this is home section */
+#home {
+  background-color: blanchedalmond;
+}
+.text {
+  text-align: center;
+  background-color: whitesmoke;
+  padding: 50px;
+  background-color: blanchedalmond;
+}
+.text h1 {
+  font-size: 25px;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+  color: rgb(26, 16, 206);
+}
+
+@media only screen and (min-width: 400px) {
+  .text h1 {
+    font-size: 50px;
+  }
+}
+#home---paragraph {
+  font-size: 15px;
+}
+@media only screen and (min-width: 400px) {
+  #home---paragraph {
+    font-size: 30px;
+  }
+}
+/* ########################### */
+/* this about section */
+#about {
+  background-color: blanchedalmond;
+}
+#second---text {
+  text-align: center;
+  background-color: whitesmoke;
+  padding: 50px;
+  background-color: blanchedalmond;
+}
+#second---text h2 {
+  font-size: 25px;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+  color: rgb(26, 16, 206);
+}
+
+@media only screen and (min-width: 400px) {
+  #second---text h2 {
+    font-size: 50px;
+  }
+}
+#second---text p {
+  font-size: 15px;
+}
+@media only screen and (min-width: 400px) {
+  #second---text p {
+    font-size: 30px;
+  }
+}
+/* ########################## */
+/* this is iframe */
+iframe {
+  max-width: 100%;
+}
+#video---iframe {
+  padding: 2rem;
+  background-color: blanchedalmond;
+}
+
+.iframe {
+  text-align: center;
+  padding: 10px;
+  background-color: blanchedalmond;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+/* #################################### */
+/* this is contact section */
+#contact {
+  text-align: center;
+  padding: 40px;
+  background-color: black;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+#contact .contact---border {
+  border-radius: 30px;
+  box-shadow: rgba(194, 172, 172, 0.16) 0px 1px 4px,
+    rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+#contact h3 {
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+  color: blanchedalmond;
+}
+#contact .contact----container .input {
+  margin: 0.5rem;
+  padding-inline: 10px;
+  width: 50%;
+  border-radius: 15px;
+  border: none;
+  background-color: blanchedalmond;
+}
+#contact .contact----container #form {
+  height: 2rem;
+}
+.socialicons a {
+  color: aliceblue;
+}
+/* ########################## */
+/* this is button */
+button {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 4px;
+}
+button:hover {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgb(255, 0, 0) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgb(182, 4, 4) 100%
+  );
+  color: aliceblue;
+  cursor: pointer;
+}
+/* ###################### */
+/* this is footer */
+footer {
+  height: 100px;
+  padding: 10px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: whitesmoke;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+}
+footer div .socialicons {
+  border-radius: 50px;
+  padding: 15px;
+}
+footer div .socialicons:hover {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgb(255, 0, 0) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgb(182, 4, 4) 100%
+  );
+}
+/* ########################### */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.   90deg,
+    rgb(255, 0, 0) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgb(182, 4, 4) 100%
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.
